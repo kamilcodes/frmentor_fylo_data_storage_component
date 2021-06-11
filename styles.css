@@ -244,9 +244,19 @@ img {
 .attribution {
   font-size: 11px;
   text-align: center;
-  color: #fff;
-  margin-top: 10px;
+
+  color: hsl(228, 45%, 44%);
+  margin-top: 80px;
+}
+
+@media screen and (min-width: 45em) {
+  .attribution {
+    margin-top: 10px;
+    margin-left: 2px;
+    text-align: left;
+  }
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #fff;
+  text-decoration: none;
 }
