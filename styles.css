@@ -102,8 +102,7 @@ img {
   transition: all 0.2s ease-in;
 }
 
-.component__nav-item:hover,
-.component__nav-item:focus {
+.component__nav-item:hover {
   box-shadow: 0 2px 2.2px rgb(0 0 0 / 2%), 0 4.8px 5.3px rgb(0 0 0 / 3%),
     0 5.8px 8px rgb(0 0 0 / 4%), 0 6.5px 15px rgb(0 0 0 / 4%),
     0 7px 20px rgb(0 0 0 / 5%), 0 10px 22px rgb(0 0 0 / 7%);
@@ -139,7 +138,7 @@ img {
 
 @media screen and (min-width: 45em) {
   .data-storage {
-    padding: 43px 40px 40px 40px;
+    padding: 42px 40px 42px 40px;
     margin-top: 0;
     width: 60%;
     min-width: fit-content;
@@ -147,7 +146,7 @@ img {
 }
 
 .data-storage__text {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 45em) {
@@ -251,7 +250,7 @@ img {
 
 @media screen and (min-width: 45em) {
   .attribution {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 2px;
     text-align: left;
   }
