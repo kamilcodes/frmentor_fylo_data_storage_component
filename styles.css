@@ -23,6 +23,10 @@ body {
   }
 }
 
+.bold {
+  font-weight: 700;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -106,12 +110,14 @@ img {
   box-shadow: 0 2px 2.2px rgb(0 0 0 / 2%), 0 4.8px 5.3px rgb(0 0 0 / 3%),
     0 5.8px 8px rgb(0 0 0 / 4%), 0 6.5px 15px rgb(0 0 0 / 4%),
     0 7px 20px rgb(0 0 0 / 5%), 0 10px 22px rgb(0 0 0 / 7%);
+  border: 0.5px solid hsl(6, 100%, 80%);
   transform: translate(0, -2px);
 }
 
 .component__nav-item:active {
   transform: translate(0, 0);
   box-shadow: initial;
+  border: 0.5px solid hsl(335, 100%, 65%);
 }
 
 .nav-icon {
@@ -167,7 +173,7 @@ img {
   padding: 2px;
   border-radius: 10px;
 
-  width: 80%;
+  width: 81.5%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -211,8 +217,22 @@ img {
 @media screen and (min-width: 45em) {
   .data-storage__unused-storage {
     position: absolute;
-    top: -70px;
+    top: -64px;
     right: 40px;
+  }
+
+  .data-storage__unused-storage::after {
+    content: "";
+    width: 0;
+    height: 0;
+    width: 60px;
+    border-top: solid 22px transparent;
+    border-bottom: solid 22px transparent;
+    border-right: solid 22px white;
+
+    position: absolute;
+    bottom: -21px;
+    right: 0;
   }
 }
 
@@ -256,6 +276,11 @@ img {
   }
 }
 .attribution a {
-  color: #fff;
+  color: hsl(229, 7%, 55%);
   text-decoration: none;
+  transition: all 0.3s;
+}
+
+.attribution a:hover {
+  color: hsl(243, 100%, 93%);
 }
