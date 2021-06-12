@@ -77,6 +77,9 @@ img {
   flex-direction: column;
   padding: 40px;
   border-radius: 10px 100px 10px 10px;
+  box-shadow: 0 2.1px 9.3px rgba(0, 0, 0, 0.05),
+    0 5.2px 23.5px rgba(0, 0, 0, 0.034), 0 10.6px 48px rgba(0, 0, 0, 0.028),
+    0 21.9px 98.9px rgba(0, 0, 0, 0.022), 0 60px 271px rgba(0, 0, 0, 0.016);
 }
 
 @media screen and (min-width: 45em) {
@@ -140,6 +143,10 @@ img {
   border-radius: 10px;
   margin-top: 15px;
   position: relative;
+
+  box-shadow: 0 2.1px 9.3px rgba(0, 0, 0, 0.05),
+    0 5.2px 23.5px rgba(0, 0, 0, 0.034), 0 10.6px 48px rgba(0, 0, 0, 0.028),
+    0 21.9px 98.9px rgba(0, 0, 0, 0.022), 0 60px 271px rgba(0, 0, 0, 0.016);
 }
 
 @media screen and (min-width: 45em) {
