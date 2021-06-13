@@ -110,10 +110,9 @@ img {
 }
 
 .component__nav-item:hover {
-  box-shadow: 0 2px 2.2px rgb(0 0 0 / 2%), 0 4.8px 5.3px rgb(0 0 0 / 3%),
-    0 5.8px 8px rgb(0 0 0 / 4%), 0 6.5px 15px rgb(0 0 0 / 4%),
-    0 7px 20px rgb(0 0 0 / 5%), 0 10px 22px rgb(0 0 0 / 7%);
-  border: 0.5px solid hsl(6, 100%, 80%);
+  box-shadow: 0 0 5px rgba(255, 163, 153, 0.8);
+  border: 0.5px solid rgba(255, 163, 153, 0.8);
+  /* border: 0.5px solid rgba(255, 163, 153, .8); */
   transform: translate(0, -2px);
 }
 
