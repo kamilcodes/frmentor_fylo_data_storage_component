@@ -85,7 +85,7 @@ img {
 @media screen and (min-width: 45em) {
   .component__nav {
     min-width: fit-content;
-    max-width: 40%;
+    max-width: 35%;
   }
 }
 
@@ -152,7 +152,7 @@ img {
   .data-storage {
     padding: 42px 40px 42px 40px;
     margin-top: 0;
-    width: 60%;
+    width: 65%;
     min-width: fit-content;
   }
 }
