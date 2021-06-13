@@ -13,7 +13,7 @@ body {
   font-size: 14px;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   body {
     background-color: hsl(229, 57%, 11%);
     background-image: url(./images/bg-desktop.png);
@@ -44,10 +44,11 @@ img {
   justify-content: center; */
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   .main-container {
     /* width: 100%; */
-    padding-top: 288px;
+    padding: 288px 0 0 0;
+
     max-width: 920px;
   }
 }
@@ -62,7 +63,7 @@ img {
   width: 100%;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   .flex-container {
     /* width: 100%; */
     max-width: 920px;
@@ -82,7 +83,7 @@ img {
     0 21.9px 98.9px rgba(0, 0, 0, 0.022), 0 60px 271px rgba(0, 0, 0, 0.016);
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   .component__nav {
     min-width: fit-content;
     max-width: 35%;
@@ -148,7 +149,7 @@ img {
     0 21.9px 98.9px rgba(0, 0, 0, 0.022), 0 60px 271px rgba(0, 0, 0, 0.016);
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   .data-storage {
     padding: 42px 40px 42px 40px;
     margin-top: 0;
@@ -161,7 +162,7 @@ img {
   font-size: 14px;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   .data-storage__text {
     text-align: left;
   }
@@ -220,7 +221,7 @@ img {
   margin: 20px auto;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   .data-storage__unused-storage {
     position: absolute;
     top: -64px;
@@ -249,7 +250,7 @@ img {
   vertical-align: middle;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   .flex-container {
     display: flex;
     flex-direction: row;
@@ -274,7 +275,7 @@ img {
   margin-top: 80px;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 60em) {
   .attribution {
     margin-top: 15px;
     margin-left: 2px;
