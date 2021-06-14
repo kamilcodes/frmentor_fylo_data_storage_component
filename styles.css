@@ -99,6 +99,8 @@ img {
   box-shadow: 0 2.1px 9.3px rgba(0, 0, 0, 0.05),
     0 5.2px 23.5px rgba(0, 0, 0, 0.034), 0 10.6px 48px rgba(0, 0, 0, 0.028),
     0 21.9px 98.9px rgba(0, 0, 0, 0.022), 0 60px 271px rgba(0, 0, 0, 0.016);
+
+  animation: animateInFromTop 0.5s ease-in;
 }
 
 @media screen and (min-width: 60em) {
@@ -163,6 +165,8 @@ img {
   box-shadow: 0 2.1px 9.3px rgba(0, 0, 0, 0.05),
     0 5.2px 23.5px rgba(0, 0, 0, 0.034), 0 10.6px 48px rgba(0, 0, 0, 0.028),
     0 21.9px 98.9px rgba(0, 0, 0, 0.022), 0 60px 271px rgba(0, 0, 0, 0.016);
+
+  animation: animateInFromBottom 0.5s ease-in;
 }
 
 @media screen and (min-width: 60em) {
@@ -203,6 +207,8 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  animation: animateInScale 0.5s ease-in;
 }
 
 .status-bar-circle {
@@ -236,6 +242,8 @@ img {
     position: absolute;
     top: -64px;
     right: 40px;
+
+    animation: animateInFromTop2 0.5s ease-in;
   }
 
   .data-storage__unused-storage::after {
@@ -268,6 +276,8 @@ img {
 
   color: var(--neutral-light-blue);
   margin-top: 80px;
+
+  animation: animateInFromBottom 0.5s ease-in;
 }
 
 @media screen and (min-width: 60em) {
@@ -286,4 +296,54 @@ img {
 
 .attribution a:hover {
   color: var(--neutral-pale-blue);
+}
+
+/* Animation ///////////////////////////////// */
+
+@keyframes animateInScale {
+  0% {
+    transform-origin: 0;
+    transform: scaleX(0.2);
+  }
+
+  100% {
+    transform-origin: 0;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes animateInFromTop {
+  0% {
+    opacity: 0%;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateInFromTop2 {
+  0% {
+    opacity: 0%;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateInFromBottom {
+  0% {
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
 }
