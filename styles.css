@@ -31,7 +31,7 @@ body {
   font-size: 14px;
 }
 
-@media screen and (min-width: 60em) {
+@media (min-width: 60em) {
   body {
     background-color: var(--neutral-very-dark-blue);
     background-image: url(./images/bg-desktop.png);
@@ -59,7 +59,7 @@ img {
   max-width: 450px;
 }
 
-@media screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .main-container {
     padding: 288px 0 0 0;
     max-width: 920px;
@@ -76,7 +76,7 @@ img {
   width: 100%;
 }
 
-@media screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .flex-container {
     max-width: 920px;
     display: flex;
@@ -100,10 +100,28 @@ img {
     0 5.2px 23.5px rgba(0, 0, 0, 0.034), 0 10.6px 48px rgba(0, 0, 0, 0.028),
     0 21.9px 98.9px rgba(0, 0, 0, 0.022), 0 60px 271px rgba(0, 0, 0, 0.016);
 
+  /* animation: animateInFromTop 0.5s ease-in; */
+}
+
+/* Nav Animation //////////////////////////////// */
+.component__nav:not(:only-child) {
   animation: animateInFromTop 0.5s ease-in;
 }
 
-@media screen and (min-width: 60em) {
+#item1 {
+  animation: animateInFromTop3 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+    backwards;
+}
+#item2 {
+  animation: animateInFromTop3 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.1s
+    backwards;
+}
+#item3 {
+  animation: animateInFromTop3 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s
+    backwards;
+}
+
+@media (min-width: 60em) {
   .component__nav {
     min-width: fit-content;
     max-width: 35%;
@@ -127,7 +145,7 @@ img {
   margin-right: 15px;
   border-radius: 10px;
 
-  transition: all 0.2s ease-in;
+  /* transition: all 0.2s ease-in; */
 }
 
 .component__nav-item:hover {
@@ -169,7 +187,7 @@ img {
   animation: animateInFromBottom 0.5s ease-in;
 }
 
-@media screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .data-storage {
     padding: 42px 40px 42px 40px;
     margin-top: 0;
@@ -185,7 +203,7 @@ img {
   font-size: 14px;
 }
 
-@media screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .data-storage__text {
     text-align: left;
   }
@@ -237,7 +255,7 @@ img {
   margin: 20px auto;
 }
 
-@media screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .data-storage__unused-storage {
     position: absolute;
     top: -64px;
@@ -280,7 +298,7 @@ img {
   animation: animateInFromBottom 0.5s ease-in;
 }
 
-@media screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .attribution {
     margin-top: 15px;
     margin-left: 2px;
@@ -332,6 +350,16 @@ img {
 
   100% {
     opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateInFromTop3 {
+  0% {
+    transform: translateY(-15px);
+  }
+
+  100% {
     transform: translateY(0);
   }
 }
